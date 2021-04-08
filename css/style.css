@@ -117,6 +117,10 @@ section {
 .catch {
     text-align: center;
 }
+.catch .text {
+    text-align: left;
+    display: inline-block;
+}
 .catch h2 {
     padding-bottom: 1rem;
 }
