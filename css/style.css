@@ -225,3 +225,58 @@ footer h4 {
 	display: block;
 }
 }
+
+table.table01 {
+	width:100%;
+	border-right:#CCC solid 1px;
+	border-collapse: collapse;
+}
+table.table01 thead th {
+	background:#3f3f3f;
+	color:#FFF;
+	padding:10px 15px;
+	border-right:#FFF solid 1px;
+	border-bottom:#FFF solid 1px;
+}
+table.table01 thead th:last-child {
+	border-right:#CCC solid 1px;
+}
+table.table01 tbody th {
+	background:#3f3f3f;
+	color:#FFF;
+	padding:10px 15px;
+	border-bottom:#FFF solid 1px;
+	vertical-align:top;
+}
+table.table01 tbody tr:last-child th {
+	border-bottom:#CCC solid 1px;
+}
+table.table01 tbody td {
+	background:#FFF;
+	padding:10px 15px;
+	border-left:#CCC solid 1px;
+	border-bottom:#CCC solid 1px;
+    border-top: #ccc solid 1px;
+	vertical-align:top;
+}
+ 
+@media screen and (max-width: 640px) {
+table.table01 thead {
+	display:none;
+}
+table.table01 tbody th {
+	display:block;
+}
+table.table01 tbody td {
+	display:block;
+}
+table.table01 tbody td::before {
+	content: attr(label);
+	float: left;
+	clear:both;
+	font-weight:bold;
+}
+table.table01 tbody td p {
+	padding-left:6em;
+}
+}
